@@ -1,0 +1,28 @@
+{
+  "name": "StatPad",
+  "version": "0.1.0",
+  "description": "Keep up with your favorite leagues at a glance! Check live scores, player statistics, and the latest news for multiple sports.",
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "permissions": ["storage", "alarms"],
+  "host_permissions": [
+    "https://site.api.espn.com/*",
+    "https://a.espncdn.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "StatPad",
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    }
+  },
+  "manifest_version": 3
+}
