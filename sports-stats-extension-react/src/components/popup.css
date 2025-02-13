@@ -1,0 +1,116 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  width: 500px; /* Adjust width */
+}
+
+/* Container for all games */
+#gamesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between cards */
+  padding: 10px;
+}
+
+/* Each game card */
+.gameCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Game header (match time) */
+.gameHeader,
+.gameClock {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.venue {
+  color: grey;
+  font-size: 8pt;
+}
+
+/* Updated Teams Row */
+.teamsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center-aligns the items vertically */
+  margin-bottom: 0;
+  height: 80px;
+  position: relative; /* Position for child alignment */
+}
+
+/* Updated Score Row */
+.scoreRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  gap: 20px;
+  height: 100%;
+  position: absolute; /* Position it relative to the teamsRow */
+  top: 15px;
+  left: 0;
+  right: 0;
+}
+
+/* Team info column (home/away) */
+.teamColumn {
+  width: 48%; /* Allow space for both teams */
+}
+
+/* Home/Away team name styling */
+.teamName {
+  font-weight: bold;
+}
+
+/* Home/Away team record styling */
+.teamRecord {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.progress-container {
+  position: relative;
+  margin-top: 10px;
+  height: 0.6rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  filter: brightness(1.2);
+}
+
+.progress-container .progress {
+  height: 100%;
+  width: 0;
+  border-radius: 0;
+  transition: width 0.4s ease;
+  filter: brightness(1.2);
+}
+
+.percentage-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px darkgray;
+}
